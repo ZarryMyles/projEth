@@ -1,7 +1,4 @@
-html, body {
-  font-family: 'Poppins', sans-serif;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&display=swap');
 .App {
   text-align: center;
 }
@@ -23,4 +20,51 @@ html, body {
 
 .App-link {
   color: #09d3ac;
+}
+
+.font-lato {
+  font-family: 'Lato', sans-serif !important;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.MuiListItemText-root:hover {
+  font-family: 'Lato', sans-serif !important;
+  padding: 0;
+}
+
+.MuiTypography-body1 {
+  font-family: 'Lato', sans-serif !important;
+  font-size: 1.2rem !important;
+}
+
+.MuiAppBar-colorPrimary {
+  background-color: #f48882 !important;
+}
+
+.MuiListItem-root:hover {
+  background-color: rgba(0, 0, 0, 0.04) !important;
+}
+
+.MuiButton-outlinedPrimary:hover {
+  border: 2px solid #ff7770 !important;
+  background-color: #ff7770 !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #ff7770 !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #f48882 !important;
+}
+
+.MuiButton-label {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.MuiInputBase-input {
+  font-family: 'Montserrat', sans-serif !important;
 }

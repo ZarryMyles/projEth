@@ -6,7 +6,6 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import List from '@material-ui/core/List'
-import Typography from '@material-ui/core/Typography'
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
@@ -16,11 +15,12 @@ import ListItemText from '@material-ui/core/ListItemText'
 import { Link } from 'react-router-dom'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
-const drawerWidth = 240
+const drawerWidth = 200
 
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
+    fontFamily: 'lato',
   },
   appBar: {
     transition: theme.transitions.create(['margin', 'width'], {
@@ -45,15 +45,19 @@ const useStyles = makeStyles((theme) => ({
   drawer: {
     width: drawerWidth,
     flexShrink: 0,
+    fontFamily: 'lato',
   },
   drawerPaper: {
     width: drawerWidth,
-    backgroundColor: '#09126d',
-    color: '#fff',
+    backgroundColor: '#ff7770',
+    color: '#000',
+    fontSize: '3rem',
   },
   drawerHeader: {
     display: 'flex',
     alignItems: 'center',
+    fontFamily: 'lato',
+    fontSize: '3rem',
     padding: theme.spacing(0, 1),
     // necessary for content to be below app bar
     ...theme.mixins.toolbar,
@@ -84,7 +88,7 @@ export default function PersistentDrawerLeft({
 }) {
   const classes = useStyles()
   const theme = useTheme()
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
 
   const handleDrawerOpen = () => {
     setOpen(true)
@@ -113,18 +117,29 @@ export default function PersistentDrawerLeft({
           >
             <MenuIcon />
           </IconButton>
-          <Typography
-            variant="h6"
-            noWrap
-            style={{ display: 'flex', alignItems: 'center' }}
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              background: 'transparent',
+              fontFamily: 'lato',
+              maxHeight: '60px',
+            }}
           >
             <img
               alt="."
               src="/logo.png"
-              style={{ height: '45px', width: 'auto' }}
+              style={{
+                height: '45px',
+                width: 'auto',
+                margin: '0 10px',
+              }}
             />
-            &nbsp;SupplyChain-Dapp
-          </Typography>
+            <h5 style={{ fontSize: '1.5rem', marginLeft: '10px' }}>
+              Supply Chain Management
+            </h5>
+          </div>
         </Toolbar>
       </AppBar>
       <Drawer
