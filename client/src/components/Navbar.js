@@ -13,7 +13,6 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 import { Link } from 'react-router-dom'
-import GitHubIcon from '@material-ui/icons/GitHub'
 
 const drawerWidth = 200
 
@@ -88,7 +87,7 @@ export default function PersistentDrawerLeft({
 }) {
   const classes = useStyles()
   const theme = useTheme()
-  const [open, setOpen] = React.useState(false)
+  const [open, setOpen] = React.useState(true)
 
   const handleDrawerOpen = () => {
     setOpen(true)

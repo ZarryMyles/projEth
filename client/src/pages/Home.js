@@ -8,11 +8,12 @@ import { Link } from 'react-router-dom'
 export default function Home() {
   const classes = useStyles()
   const navItem = []
+  const navOp = false
 
   return (
     <>
       <div className={classes.pageWrap}>
-        <Navbar navItems={navItem}>
+        <Navbar navItems={navItem} navOpen={navOp}>
           <Grid
             container
             spacing={3}

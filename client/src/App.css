@@ -68,3 +68,20 @@
 .MuiInputBase-input {
   font-family: 'Montserrat', sans-serif !important;
 }
+
+.makeStyles-TableHead-7 {
+  color: white !important;
+  background-color: #ff7770 !important;
+}
+
+.MuiTableCell-root {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.makeStyles-TableHead-7 {
+  font-family: 'Lato', sans-serif !important;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif !important;
+}

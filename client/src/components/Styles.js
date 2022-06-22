@@ -16,13 +16,14 @@ export const useStyles = makeStyles({
     width: '100%',
     maxWidth: 1200,
     margin: '5px auto',
-    border: '2px solid #24211e',
+    border: '1px solid red',
     borderRadius: 10,
-    boxShadow: '2px 2px 10px #9fa8da',
+    fontFamily: 'lato !important',
   },
   TableContainer: {
     maxHeight: 600,
     borderRadius: 7,
+    fontFamily: 'lato !important',
   },
   AddressCell: {
     maxWidth: 150,
@@ -36,8 +37,8 @@ export const useStyles = makeStyles({
     color: '#24211e',
   },
   TableHead: {
-    backgroundColor: '#24211e !important',
-    color: '#fff !important',
+    backgroundColor: '#24211e',
+    color: '#fff',
   },
   TableCell: {
     color: '#24211e !important',

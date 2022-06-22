@@ -16,7 +16,7 @@ export default function HomeCustomer() {
   ]
   return (
     <>
-      <Navbar pageTitle={'Delivery Hub'} navItems={navItem}>
+      <Navbar pageTitle={'Customer'} navItems={navItem}>
         {loading ? (
           <Loader />
         ) : (
