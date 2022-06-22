@@ -156,7 +156,6 @@ export const useStyles = makeStyles({
     width: '90%',
     padding: 20,
     borderRadius: 20,
-    boxShadow: '10px 10px 18px #b49793,-10px -10px 18px #ffffff;',
     margin: '10px auto',
   },
 
@@ -168,7 +167,6 @@ export const useStyles = makeStyles({
     width: '90%',
     padding: 20,
     borderRadius: 20,
-    boxShadow: '10px 10px 18px #b49793,-10px -10px 18px #ffffff;',
     margin: '10px auto',
   },
 })
