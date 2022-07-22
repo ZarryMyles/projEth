@@ -308,7 +308,7 @@ export default function Explorer(props) {
                                     color="primary"
                                     onClick={() => fetchTxRecipt(row[2][5])}
                                   >
-                                    RECIPT
+                                    RECEIPT
                                   </Button>
                                 </TableCell>
                               </TableRow>
